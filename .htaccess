@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ /shop-shoes/public/ [L,R=302]
+    RewriteRule ^((?!public/).*)$ /shop-shoes/public/$1 [L,R=302]
+</IfModule>
